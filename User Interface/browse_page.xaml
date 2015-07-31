@@ -1,0 +1,45 @@
+<!--**************************************************************************************
+'Easy EBSD Data Analyzer
+
+'*	Author: Anil Kumar
+'*	email: aniliitb10@gmail.com
+'*	file: browse_page.xaml
+'*	date added: July 30, 2015
+'*	Copyright © 2015 Anil Kumar
+
+'*	This file is part of Easy EBSD Data Analyzer.
+
+'    Easy EBSD Data Analyzer is free software: you can redistribute it and/or modify
+'    it under the terms of the GNU General Public License as published by
+'    the Free Software Foundation, either version 3 of the License, or
+'    any later version.
+
+'    Easy EBSD Data Analyzer is distributed in the hope that it will be useful,
+'    but WITHOUT ANY WARRANTY; without even the implied warranty of
+'    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+'    GNU General Public License for more details.
+
+'    You should have received a copy of the GNU General Public License
+'    along with Easy EBSD Data Analyzer.  If not, see<http://www.gnu.org/licenses/> .
+
+'**************************************************************************************-->
+
+
+<Page x:Class="browse_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+       Title="EBSD data processing software: Browsing window" Height="742" Width="1360">
+    <Grid>
+        <TextBox x:Name="browseTextBox" HorizontalAlignment="Left" Height="23" Margin="314,305,0,0" TextWrapping="Wrap" Text="Click Browse to browse the data file" VerticalAlignment="Top" Width="559" FontSize="14"/>
+        <Button x:Name="browseButton" Content="Browse" HorizontalAlignment="Left" Margin="914,304,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <TextBlock x:Name="infoTextBlock1" HorizontalAlignment="Left" Margin="314,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" FontSize="16" Height="24" Text="This User Interface is designed to be user friendly. Please follow the instructions carefully."/>
+        <TextBlock x:Name="infoTextBlock2" HorizontalAlignment="Left" Margin="314,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" FontSize="16" Height="24"><Run Text="The Data file should be in proper format, "/><Run Text="Read instructions in the Manual for details."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="infoTextBlock3" HorizontalAlignment="Left" Margin="314,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" FontSize="16" Height="24"><Run Text="First step is to select the data file, click "/><Run FontWeight="Bold" Text="Browse"/><Run Text=" to browse the data file."/></TextBlock>
+        <TextBlock x:Name="infoTextBlock4" HorizontalAlignment="Left" Margin="314,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" FontSize="16" Height="24"><Run Text="Click "/><Run FontWeight="Bold" Text="Next"/><Run Text=" to proceed to the next step"/></TextBlock>
+        <Button x:Name="BrowseNextButton" Content="Next" HorizontalAlignment="Left" Margin="1047,570,0,0" VerticalAlignment="Top" Width="139" FontSize="16" FontWeight="Bold"/>
+    </Grid>
+</Page>

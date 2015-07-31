@@ -1,0 +1,57 @@
+<!--**************************************************************************************
+'Easy EBSD Data Analyzer
+
+'*	Author: Anil Kumar
+'*	email: aniliitb10@gmail.com
+'*	file: Data.xaml
+'*	date added: July 30, 2015
+'*	Copyright © 2015 Anil Kumar
+
+'*	This file is part of Easy EBSD Data Analyzer.
+
+'    Easy EBSD Data Analyzer is free software: you can redistribute it and/or modify
+'    it under the terms of the GNU General Public License as published by
+'    the Free Software Foundation, either version 3 of the License, or
+'    any later version.
+
+'    Easy EBSD Data Analyzer is distributed in the hope that it will be useful,
+'    but WITHOUT ANY WARRANTY; without even the implied warranty of
+'    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+'    GNU General Public License for more details.
+
+'    You should have received a copy of the GNU General Public License
+'    along with Easy EBSD Data Analyzer.  If not, see<http://www.gnu.org/licenses/> .
+
+'**************************************************************************************-->
+
+
+<Page x:Class="Data"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Data" Height="742" Width="1360">
+    <Grid x:Name="data_grid">
+        <Button x:Name="dataButton" Content="Finish" HorizontalAlignment="Left" Margin="1047,570,0,0" VerticalAlignment="Top" Width="139" FontSize="16" FontWeight="Bold"/>
+        <TextBlock x:Name="data1" HorizontalAlignment="Left" Margin="246,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="805" Text="Minimum confidence index: ...............................................................................................................                         "/>
+        <TextBlock x:Name="data2" HorizontalAlignment="Left" Margin="246,213,0,0" TextWrapping="Wrap" Text="Misorientation for grain boundary: ................................................................................................                         degree" VerticalAlignment="Top" FontSize="16" Width="778"/>
+        <TextBox x:Name="dataBox1" HorizontalAlignment="Left" Height="23" Margin="837,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <TextBlock x:Name="data6" HorizontalAlignment="Left" Margin="246,0,0,436" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="16" Width="805" Height="21"><Run Text="Number of bins: .....................................................................................................................................                         "/><LineBreak/><Run Text="20"/></TextBlock>
+        <TextBlock x:Name="data5" HorizontalAlignment="Left" Margin="245,0,0,470" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="16" Width="779" Height="21"><Run Text="For GAM, GOS or GSD, the minimum grains size that should be considered: .............                          (in pixels)"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="data3" HorizontalAlignment="Left" Margin="245,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="779" Height="21" Text="Tolerance for misorientation (for Twin Boundaries): ...............................................................                          degree" Visibility="Hidden"/>
+        <TextBlock x:Name="data4" HorizontalAlignment="Left" Margin="245,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="779" Text="Tolerance for K1 plane criteria (for Twin Boundaries): ...........................................................                          degree" Visibility="Hidden"/>
+        <TextBox x:Name="dataBox5" HorizontalAlignment="Left" Height="23" Margin="837,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="dataBox4" HorizontalAlignment="Left" Height="23" Margin="837,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Visibility="Hidden"/>
+        <TextBox x:Name="dataBox3" HorizontalAlignment="Left" Height="23" Margin="837,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Visibility="Hidden"/>
+        <TextBox x:Name="dataBox2" HorizontalAlignment="Left" Height="23" Margin="837,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="dataBox6" HorizontalAlignment="Left" Height="23" Margin="837,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="dataLabel2" Content="Default values for the variables have been provided, the user can change these default values." HorizontalAlignment="Left" Margin="241,71,0,0" VerticalAlignment="Top" Width="671" Height="30" FontSize="14"/>
+        <Label x:Name="dataLabel1" Content="Following variables are required to proceed " HorizontalAlignment="Left" Margin="240,40,0,0" VerticalAlignment="Top" Width="671" Height="37" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="dataLabel3" Content="**If any of the above Text Boxes are NON-EDITABLE, it's because those variable are not needed" HorizontalAlignment="Left" Margin="241,489,0,0" VerticalAlignment="Top" Width="599" FontSize="14"/>
+        <Label x:Name="dataLabel3_Copy" Content="**If any of the above Text Boxes are LEFT BLANK, the program proceeds with the default value" HorizontalAlignment="Left" Margin="241,513,0,0" VerticalAlignment="Top" Width="617" FontSize="14"/>
+        <CheckBox x:Name="cb_advBinning" Content="" HorizontalAlignment="Left" Margin="246,324,0,0" VerticalAlignment="Top" Width="28" FontSize="16"/>
+        <Label Content="Check to go for advance binning options" HorizontalAlignment="Left" Margin="270,314,0,0" VerticalAlignment="Top" Width="309" FontSize="16"/>
+    </Grid>
+</Page>
